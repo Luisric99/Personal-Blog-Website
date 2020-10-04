@@ -1,0 +1,97 @@
+@import url(nav.css);
+@import url(footer.css);
+@import url(img.css);
+
+body{
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: "Open Sans", "Helvetica Neue", "Arial", sans-serif;
+}
+
+.content{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.article-body {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.article-body {
+    max-width: none;
+    display: grid;
+    grid-template-columns: [fullWidth-start] 1rem 
+                           [left-start]      1fr 
+                           [article-start right-start] minmax(20ch, 80ch) 
+                           [article-end left-end] 1fr 
+                           [right-end] 1rem [fullWidth-end];
+}
+.article-body > * {
+    grid-column: article;
+}
+
+.full-width {
+    grid-template-columns: minmax(20ch, 80ch);
+    justify-content: center;
+    grid-column: fullWidth;
+    background-color: lightblue;
+    display: grid;
+    padding: 1rem;
+}
+
+@supports (grid-template-columns: subgrid) {
+    .full-width {
+        grid-template-columns: subgrid;
+        padding: 0;
+    }
+    .fullWidth-center {
+        grid-column: article;
+    }
+    .fullWidth-right {
+        grid-column: right;
+        text-align: right;
+    }
+    .fullWidth-left {
+        grid-column: left;
+    }
+}
+
+
+figure{
+    border: 1px #cccc solid;
+    padding: 4px;
+    margin: 50px;
+}
+figcaption{
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+}
+
+
+.quote p{
+    font-size: 22px;
+}
+
+
+.link strong{
+    text-decoration: none;
+    color: black;
+}
+
+
+h1, h2, h3, h4 {
+    margin: 1rem 0 0;
+}
+
+h3 {
+    font-size: 2rem;
+}
+p {
+    line-height: 1.4em;
+    font-size: 1.1rem;
+}

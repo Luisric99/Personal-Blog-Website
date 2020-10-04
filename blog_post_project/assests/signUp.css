@@ -1,0 +1,100 @@
+@import url(footer.css);
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+.sign-up{
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: #fff;
+    padding: 20px;
+    margin: 8% auto;  
+    text-align: center;
+}
+
+.sign-up h1{
+    color: #1c8adb;
+    margin-bottom: 30px;
+
+}
+
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 85%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+button{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+.sign-up-btn{
+    background-color: #1c8adb;
+}
+
+.twitter{
+    background-color: #21afde;
+}
+
+
+
+.site-header{
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.site-header_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    text-align: center;
+}
+
+.nav{
+    text-align: center;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: .5em 1.5em
+}
+
+.nav ul{
+    margin: 1em 0 .5em;;
+}
+
+.nav ul li{
+    display: inline;
+}
+
+
+.logo{
+    text-decoration: none;
+    color: black;
+    max-width: 100%;
+    height: auto;
+}
